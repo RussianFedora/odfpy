@@ -2,14 +2,16 @@
 
 Name:		odfpy
 Version:	0.9
-Release:	2%{?dist}
+Release:	3%{?dist}
 Summary:	Python library for manipulating OpenDocument files
 
 Group:		Development/Languages
 License:	GPLv2+
 URL:		http://forge.osor.eu/projects/odfpy/
 # This changes every time, most recent downloads are at http://forge.osor.eu/frs/?group_id=33
-Source0:	http://forge.osor.eu/frs/download.php/286/odfpy-0.9.tar.gz
+# Source0:	http://forge.osor.eu/frs/download.php/286/odfpy-0.9.tar.gz
+# Uploaded to github to be able to get anonymously from koji
+Source0:      https://github.com/mackoel/odfpy/blob/master/odfpy-0.9.tar.gz
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 BuildArch:	noarch
@@ -59,6 +61,9 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Sat Mar 10 2012 Kozlov Konstantin <mackoel@gmail.com> - 0.9-3
+- Uploaded tarball to github to be able to get it anonymously from koji
+
 * Sat Jul 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.9-2
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
 
