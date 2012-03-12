@@ -11,7 +11,7 @@ URL:		http://forge.osor.eu/projects/odfpy/
 # This changes every time, most recent downloads are at http://forge.osor.eu/frs/?group_id=33
 # Source0:	http://forge.osor.eu/frs/download.php/286/odfpy-0.9.tar.gz
 # Uploaded to github to be able to get anonymously from koji
-Source0:      https://github.com/mackoel/odfpy/blob/master/odfpy-0.9.tar.gz
+Source0:      https://github.com/mackoel/odfpy/raw/master/odfpy-0.9.tar.gz
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 BuildArch:	noarch
