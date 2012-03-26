@@ -1,8 +1,8 @@
-%{!?python_sitelib: %define python_sitelib %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib()")}
+%{!?python_sitelib: %global python_sitelib %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib()")}
 
 Name:		odfpy
 Version:	0.9
-Release:	3%{?dist}
+Release:	4%{?dist}
 Summary:	Python library for manipulating OpenDocument files
 
 Group:		Development/Languages
@@ -61,6 +61,9 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Sat Mon 26 2012 Kozlov Konstantin <mackoel@gmail.com> - 0.9-4
+- Changed define to global in the first line
+
 * Sat Mar 10 2012 Kozlov Konstantin <mackoel@gmail.com> - 0.9-3
 - Uploaded tarball to github to be able to get it anonymously from koji
 
