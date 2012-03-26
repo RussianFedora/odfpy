@@ -61,7 +61,7 @@ rm -rf %{buildroot}
 
 
 %changelog
-* Sat Mon 26 2012 Kozlov Konstantin <mackoel@gmail.com> - 0.9-4
+* Mon Mar 26 2012 Kozlov Konstantin <mackoel@gmail.com> - 0.9-4
 - Changed define to global in the first line
 
 * Sat Mar 10 2012 Kozlov Konstantin <mackoel@gmail.com> - 0.9-3
